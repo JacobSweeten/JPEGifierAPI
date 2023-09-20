@@ -26,3 +26,6 @@ Run daemon: `docker run -d --name jpegifier -p8000:8000 jpegifier node index.js`
 
 ## Example Output
 ![](./example.png)
+
+## Methodology
+The methodology is simple. First, the image is scaled down to a fifth the size and scaled back up using the nearest-neighbor method. Then, a posterize filter is applied. It emulates the JPEG look pretty well, but it is not quite the same as exporting from Gimp at lowest settings. I find this to be a good enough approxmiation, especially for simple amusement.
