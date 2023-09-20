@@ -65,7 +65,7 @@ const server = https.createServer(httpConfig, (req, res) => {
 				jimpImage = jimpImage.posterize(5);
 				outImg = await jimpImage.getBufferAsync(Jimp.MIME_JPEG);
 				
-				res.setHeader("Content-Type", "application/jpeg");
+				res.setHeader("Content-Type", "image/jpeg");
 				res.writeHead(200);
 				res.end(outImg);
 				return;
