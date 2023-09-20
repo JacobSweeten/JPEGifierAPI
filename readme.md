@@ -19,3 +19,6 @@ The server will reply with the JPEGified image.
 Build image: `docker build . -t jpegifier`
 
 Run daemon: `docker run -d --name jpegifier -p8000:8000 jpegifier node index.js`
+
+## Example Output
+![](./test/image.jpg)![](./test/out.jpeg)
